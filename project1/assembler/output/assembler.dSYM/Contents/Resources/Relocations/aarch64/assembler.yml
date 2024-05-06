@@ -1,0 +1,22 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/joonyoung_moon/Desktop/한양대학교/한양대 3학년 1학기/컴퓨터구조론/project/2024_ite2031_2022006135/project1/assembler/output/assembler"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002AB4, symSize: 0x48C }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _Labels, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0xB9, offset: 0xB9, size: 0x8, addend: 0x0, symName: _labelnum, symBinAddr: 0x100009F40, symSize: 0x0 }
+  - { offsetInCU: 0xC3, offset: 0xC3, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100002AB4, symSize: 0x48C }
+  - { offsetInCU: 0x1C6, offset: 0x1C6, size: 0x8, addend: 0x0, symName: _initlabel, symObjAddr: 0x48C, symBinAddr: 0x100002F40, symSize: 0x32C }
+  - { offsetInCU: 0x2BA, offset: 0x2BA, size: 0x8, addend: 0x0, symName: _readAndParse, symObjAddr: 0x7B8, symBinAddr: 0x10000326C, symSize: 0x18C }
+  - { offsetInCU: 0x34A, offset: 0x34A, size: 0x8, addend: 0x0, symName: _RTypeFormat, symObjAddr: 0x944, symBinAddr: 0x1000033F8, symSize: 0x138 }
+  - { offsetInCU: 0x3B8, offset: 0x3B8, size: 0x8, addend: 0x0, symName: _ITypeFormat, symObjAddr: 0xA7C, symBinAddr: 0x100003530, symSize: 0x264 }
+  - { offsetInCU: 0x434, offset: 0x434, size: 0x8, addend: 0x0, symName: _JTypeFormat, symObjAddr: 0xCE0, symBinAddr: 0x100003794, symSize: 0xDC }
+  - { offsetInCU: 0x49A, offset: 0x49A, size: 0x8, addend: 0x0, symName: _OTypeFormat, symObjAddr: 0xDBC, symBinAddr: 0x100003870, symSize: 0x80 }
+  - { offsetInCU: 0x4D3, offset: 0x4D3, size: 0x8, addend: 0x0, symName: _isNumber, symObjAddr: 0xE3C, symBinAddr: 0x1000038F0, symSize: 0x44 }
+  - { offsetInCU: 0x509, offset: 0x509, size: 0x8, addend: 0x0, symName: _getLabelValue, symObjAddr: 0xE80, symBinAddr: 0x100003934, symSize: 0xF8 }
+  - { offsetInCU: 0x550, offset: 0x550, size: 0x8, addend: 0x0, symName: _isValidReg, symObjAddr: 0xF78, symBinAddr: 0x100003A2C, symSize: 0x88 }
+  - { offsetInCU: 0x586, offset: 0x586, size: 0x8, addend: 0x0, symName: _getLabelAddress, symObjAddr: 0x1000, symBinAddr: 0x100003AB4, symSize: 0xAC }
+  - { offsetInCU: 0x5CD, offset: 0x5CD, size: 0x8, addend: 0x0, symName: _isValidLabel, symObjAddr: 0x10AC, symBinAddr: 0x100003B60, symSize: 0xF4 }
+  - { offsetInCU: 0x614, offset: 0x614, size: 0x8, addend: 0x0, symName: _isValidNumber, symObjAddr: 0x11A0, symBinAddr: 0x100003C54, symSize: 0x58 }
+  - { offsetInCU: 0x63E, offset: 0x63E, size: 0x8, addend: 0x0, symName: _isLetter, symObjAddr: 0x11F8, symBinAddr: 0x100003CAC, symSize: 0x94 }
+...
