@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	while(readAndParse(inFilePtr, label, opcode, arg0, arg1, arg2)){
 		int machine_code = 0;
 		/* R-Type */
-		if(!strcmp(opcode, "add")){
+		if(!strcmp(opcode, "add") || !strcmp(opcode, "nor")){
 			machine_code = RTypeFormat(opcode, arg0, arg1, arg2);
 		}
 		/* I-Type */
@@ -80,7 +80,7 @@ int main(int argc, char *argv[])
 		/* */
 		else if(!strcmp(opcode, ".fill")){
 			if(isNumber(arg0)){
-				machine_code = getLabelValue(label);
+				machine_code = atoi(arg0);
 			}
 			else{
 				machine_code = getLabelAddress(arg0);
@@ -88,6 +88,7 @@ int main(int argc, char *argv[])
 		}
 		else{
 			printf("Undefined opcode\n");
+			printf("%s\n", opcode);
 			exit(1);
 		}
 		fprintf(outFilePtr, "%d\n", machine_code);
@@ -183,8 +184,8 @@ int isValidReg(char *reg){
 /* and | nor */
 int RTypeFormat(char *opcode, char *reg1, char *reg2, char *destReg){
 	int machine_code = 0;
-	if(!(isValidReg(reg1) || !(isValidReg(reg2)))){
-		printf("Register is not valid");
+	if(!(isValidReg(reg1)) || !(isValidReg(reg2))){
+		printf("Register is not valid\n");
 		exit(1);
 	}
 
