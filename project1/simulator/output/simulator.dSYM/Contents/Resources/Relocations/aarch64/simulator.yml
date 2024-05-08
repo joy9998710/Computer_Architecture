@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/joonyoung_moon/Desktop/한양대학교/한양대 3학년 1학기/컴퓨터구조론/project/2024_ite2031_2022006135/project1/simulator/output/simulator"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x10000359C, symSize: 0x704 }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x10000359C, symSize: 0x704 }
+  - { offsetInCU: 0x199, offset: 0x199, size: 0x8, addend: 0x0, symName: _convertNum, symObjAddr: 0x704, symBinAddr: 0x100003CA0, symSize: 0x38 }
+  - { offsetInCU: 0x1C1, offset: 0x1C1, size: 0x8, addend: 0x0, symName: _printState, symObjAddr: 0x73C, symBinAddr: 0x100003CD8, symSize: 0x14C }
+...
